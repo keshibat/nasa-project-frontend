@@ -22,7 +22,7 @@ async function httpSubmitLaunch(launch) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringfy(launch),
+      body: JSON.stringify(launch),
     });
   } catch (error) {
       return {
