@@ -24,13 +24,11 @@ async function httpSubmitLaunch(launch) {
       },
       body: JSON.stringify(launch),
     });
-  } catch (error) {
+  } catch (err) {
       return {
         ok: false,
-      }
+      };
   }
-
-
 }
 
 // Delete launch with given ID
@@ -43,9 +41,8 @@ async function httpAbortLaunch(id) {
     console.log(error);
     return {
       ok: false,
-    }
+    };
   }
-
 }
 
 export {
